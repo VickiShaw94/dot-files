@@ -127,3 +127,9 @@ Bundle 'tpope/vim-commentary.git'
 
 " remove whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" set up plug installer and plugins
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
+call plug#end()
