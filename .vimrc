@@ -1,15 +1,3 @@
-set rtp+=$HOME/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
-filetype plugin indent on
-
-" ALL OF THE ABOVE IS ALSO REQUIRED
-" FOR SUCCESSFUL VUNDLE INSTALL
-" THE FOLLOWING IS NEW FOR US…
-
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/The-NERD-tree'
-
 " switch syntax highlighting on, when the terminal has colors
 syntax on
 
@@ -118,18 +106,3 @@ let g:ctrlp_max_height=30
 
 " lets make sure we don't show these files
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*.,*/.DS_Store
-
-" allows us to more easily work with markdown files
-Bundle 'tpope/vim-markdown'
-
-" allows us to comment/uncomment lines and content
-Bundle 'tpope/vim-commentary.git'
-
-" remove whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
-
-" set up plug installer and plugins
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/vim-easy-align'
-call plug#end()
