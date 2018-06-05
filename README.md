@@ -16,3 +16,8 @@ https://github.com/zsh-users/zsh-syntax-highlighting
 use pure prompt
 https://github.com/sindresorhus/pure
 
+  oh-my-zsh 
+overrides the prompt so Pure must be activated after source 
+  $ZSH/oh-my-zsh.sh.
+
+
